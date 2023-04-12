@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hawking Test</title>
+  </head>
+  <body>
+    <form action="" class="validateForm container" id="add-form">
+      <!-- TEXT INPUTS -->
+      <div class="modulContainer usernameContainer">
+        <label class="inputHeader">Username</label><br />
+        <input class="textInput" type="text" placeholder="Enter username" />
+      </div>
+      <div class="modulContainer passwordContainer">
+        <label class="inputHeader">Password</label><br />
+        <input
+          class="textInput passwordInput"
+          type="text"
+          placeholder="Enter password"
+        /><br /><label class="underInput"
+          >Your password is between 4 and 12 characters</label
+        >
+      </div>
+      <div class="modulContainer inputContainer">
+        <label class="inputHeader">Input text label</label><br />
+        <input class="textInput" type="text" placeholder="Type there" /><br />
+        <label class="underInput"
+          >Error message informing me of a problem</label
+        >
+      </div>
+
+      <!-- CHECKBOX -->
+      <div class="modulContainer rememberContainer">
+        <div class="form-check">
+          <input
+            class="inputCheckBox form-check-input"
+            type="checkbox"
+            placeholder=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+      </div>
+
+      <!-- TOGGLE -->
+      <div class="modulContainer toggleContainer">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >ToggleButton</label
+          >
+        </div>
+      </div>
+
+      <!-- RADIO BUTTONS -->
+      <div class="modulContainer radioContainer">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioSelection"
+            id="radioSelection1"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            Radio selection 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioSelection"
+            id="radioSelection2"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            Radio selection 2
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="radioSelection"
+            id="radioSelection3"
+            checked
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            Radio selection 3
+          </label>
+        </div>
+      </div>
+      <!-- DROPDOWN -->
+      <div class="modulContainer dropdownContainer">
+        <label>Dropdown Title</label> <br />
+        <select>
+          <option>Dropdown option</option>
+          <option>Dropdown option 1</option>
+          <option>Dropdown option 2</option>
+        </select>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="modulContainer buttonsContainer">
+        <button>Cancel</button>
+        <button type="submit" class="sendBtn">Next</button>
+      </div>
+    </form>
+
+    <script defer src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
